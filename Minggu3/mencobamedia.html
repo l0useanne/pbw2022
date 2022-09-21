@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat video di html</title>
+</head>
+<body> 
+    
+    <h1 align="center">Info ngopi</h1>
+    <h5 align="center">Proses Belajar Mandiri - Akmal Farizky Hardhana - A11.2022.14372</h5>
+    
+    
+
+<div align="center">
+    
+    <button onclick="playPause()">Mulai/Berhenti</button>
+
+    <br><br>
+    
+    <button onclick="makeBig()">Lebih Besar</button>
+
+    <button onclick="makeSmall()">Lebih Kecil</button>
+
+    <button onclick="makeNormal()">Normal kembali</button>
+
+    <button onclick="makeGedi()">Kurang gede bos?</button>
+    <br><br>
+    
+    <button onclick="kontrol()">Aktifkan Kontrol</button>
+
+    <button onclick="kons()">Nonaktifkan Kontrol</button>
+    <br><br>
+
+    <button onclick="loop()">Ulangi video secara terus menerus(otomatis)</button>
+    <br><br>
+
+    <button onclick="suaraHidup()">Mute suara</button>
+
+    <button onclick="suaraMati()">Bunyikan suara</button>
+</div>
+    <br><br><br>
+
+<center>
+    
+    <video id="myvideo" width="300">
+        <source src="Taman dimari kalo ketaman mari ngopi dokumen asli.mp4" type="video/mp4">
+    </video>
+
+</center>
+
+<script> 
+        var pidio = document.getElementById("myvideo");
+
+        function playPause() {
+            if (pidio.paused)
+            pidio.play();
+            else
+                pidio.pause();
+        }
+
+        function makeBig() {
+            pidio.width = 450;
+        }
+        function makeSmall() {
+            pidio.width = 150;
+        }
+        function makeNormal() {
+            pidio.width = 350;
+        }
+        function makeGedi() {
+            pidio.width = 10000;
+        }
+        function kontrol() {
+            pidio.controls = true;
+        }
+        function kons() {
+            pidio.controls = false;
+        }
+        function loop() {
+            pidio.loop = true;
+        }
+        function suaraHidup() {
+            pidio.muted = true;
+        }
+        function suaraMati() {
+            pidio.muted = false;
+        }
+
+
+</script>
+<b><p align="center"> Yang taman taman aja</p></b>
+
+</body>
