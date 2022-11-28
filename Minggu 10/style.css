@@ -1,0 +1,44 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.orapopo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    height: 10vh;
+}
+
+.Cons{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;  
+    height: 20vh;
+    animation: gerak infinite alternate-reverse ease 1s;
+    color: white;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;       
+}
+
+@keyframes gerak{
+    0% {
+        padding-top: 50px;
+    }
+
+    100%{
+        padding-top: 90px;
+    }
+
+}
+
+.footer{
+    text-align: center;
+    background-color: lightblue;
+    height: 70vh;
+    padding-top: 65vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    color: white;
+}
